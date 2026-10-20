@@ -1,0 +1,149 @@
+
+.home {
+  width: 100%;
+  min-height: 100vh;
+  overflow: hidden;
+}
+
+.bg-gif {
+  width: 100%;
+  margin-top: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.bg-gif img {
+  width: 90%;
+  height: 300px;
+  margin-top: 20px;
+  object-fit: cover;
+}
+
+/* Categories container */
+.categories {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 25px;
+  margin-top: 20px;
+  padding: 10px;
+  box-sizing: border-box;
+}
+
+/* Individual card */
+.card {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  cursor: pointer;
+  width: 150px;
+  height: 250px;
+  flex-shrink: 0;
+  transition: all 0.4s;
+  gap: 10px;
+  border-radius: 20px;
+  box-sizing: border-box;
+}
+
+.card:hover {
+  box-shadow: 0px 2px 8px gray;
+}
+
+.card img {
+  width: 100%;
+  height: 200px;
+  object-fit: contain;
+}
+
+
+/* Tablets */
+@media (max-width: 800px) {
+  .bg-gif img {
+    height: 220px;
+  }
+
+  .categories {
+    gap: 20px;
+  }
+
+  .card {
+    width: 130px;
+    height: 210px;
+  }
+
+  .card img {
+    height: 160px;
+  }
+}
+
+/* Mobile phones */
+@media (max-width: 500px) {
+  .bg-gif img {
+    height: 150px;
+    object-fit: cover;
+  }
+
+  .categories {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 15px;
+    height: auto;
+    padding: 10px 15px;
+  }
+
+  .card {
+    width: 100%;
+    height: 190px;
+    gap: 5px;
+  }
+
+  .card img {
+    width: 100%;
+    height: 145px;
+    object-fit: contain;
+  }
+}
+
+/* Very small phones */
+@media (max-width: 350px) {
+  .categories {
+    gap: 8px;
+    padding: 8px;
+  }
+
+  .card {
+    height: 165px;
+  }
+
+  .card img {
+    height: 120px;
+  }
+
+  .card span {
+    font-size: 12px;
+    text-align: center;
+  }
+}
+.Product-section{
+ display: flex;
+ align-items: center;
+ justify-content: center;
+gap : 20px;
+padding: 20px;
+ flex-wrap: wrap;
+  width: 85%;
+}
+.heading{
+  font-size: 50px;
+  margin-top: 50px;
+  text-align: center;
+  margin-bottom: 50px;
+}
+.footer{
+  height : 80px;
+  background-color: black;
+}
